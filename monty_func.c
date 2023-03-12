@@ -43,6 +43,8 @@ void read_file(char *filename, stack_t **stack)
 	if (check == -1)
 		exit(-1);
 }
+
+
 /**
  * get_op_func -  checks opcode and returns the correct function
  * @str: the opcode
@@ -83,7 +85,6 @@ instruct_func get_op_func(char *str)
 	return (instruct[i].f);
 }
 
-#include "monty.h"
 
 /**
  * parse_line - parses a line for an opcode and arguments
